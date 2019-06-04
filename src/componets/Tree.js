@@ -14,7 +14,7 @@ class Tree extends React.Component{
                     <li key={father.distributor_id}>
                         <Member distributor={father}/>
                         {father.children && 
-                            <Children children={father.children} />
+                            <Children children={father.children} father={true}/>
                         }
                     </li>
                 </ul>

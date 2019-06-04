@@ -31,7 +31,7 @@ class Member extends React.Component{
                     <button onClick={ this.displayChildren }>{this.state.label} Children</button>
                 </div>
                 {this.props.distributor.children && 
-                    this.state.display && 
+                     this.state.display && 
                         <Children children={this.props.distributor.children} />
                 }
             </div>

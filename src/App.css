@@ -1,8 +1,8 @@
 /*Now the CSS*/
-* {margin: 0; padding: 0;}
+* {margin: 0; padding: 0; background: rgb(38, 41, 38);}
+
 
 .tree{
-    background: rgb(159, 253, 155);
     position: absolute;
     left: 50%;
     margin-right: -50%;
@@ -33,12 +33,12 @@
 .tree li::before, .tree li::after{
     content: '';
     position: absolute; top: 0; right: 50%;
-    border-top: 1px solid rgb(155, 7, 168);
+    border-top: 1px solid rgb(118, 209, 0);
     width: 50%; height: 20px;
 }
 .tree li::after{
     right: auto; left: 50%;
-    border-left: 1px solid rgb(233, 114, 4);
+    border-left: 1px solid rgb(118, 209, 0);
 }
 
 /*We need to remove left-right connectors from elements without 
@@ -57,7 +57,7 @@ right connector from last child*/
 }
 /*Adding back the vertical connector to the last nodes*/
 .tree li:last-child::before{
-    border-right: 1px solid rgb(91, 0, 177);
+    border-right: 1px solid rgb(118, 209, 0);
     border-radius: 0 5px 0 0;
     -webkit-border-radius: 0 5px 0 0;
     -moz-border-radius: 0 5px 0 0;
@@ -73,14 +73,15 @@ right connector from last child*/
 .tree ul ul::before{
     content: '';
     position: absolute; top: 0; left: 50%;
-    border-left: 1px solid rgb(0, 119, 10);
+    border-left: 1px solid rgb(118, 209, 0);
     width: 0; height: 20px;
 }
 .tree li .node{
-    border: 1px solid rgb(187, 5, 30);
+    background-color: rgb(38, 41, 38);
+    border: 1px solid rgb(118, 209, 0);
     padding: 5px 10px;
     text-decoration: none;
-    color: rgb(0, 14, 209);
+    color: rgb(118, 209, 0);
     font-family: arial, verdana, tahoma;
     font-size: 11px;
     display: inline-block;
@@ -93,3 +94,18 @@ right connector from last child*/
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
 }
+
+button {
+    background-color: rgb(118, 209, 0); /* Green */
+    border: none;
+    color: rgb(3, 3, 3);
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 9px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }

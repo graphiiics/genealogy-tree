@@ -8,7 +8,6 @@ function App () {
   
     return (
       <div className="App">
-        <h1>Genealogy tree</h1>
         <Tree />
       </div>
     );
